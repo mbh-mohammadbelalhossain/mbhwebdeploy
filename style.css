@@ -1,0 +1,504 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+picture {
+    display: block;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 26px 0 0 0;
+    margin: 0 auto;
+}
+
+.grid-xtwo {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+
+/* Fonts */
+.manrope {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.work-sans {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.text-s {
+    font-size: 1.13rem;
+    font-weight: 500;
+    line-height: 144.4%;
+}
+
+.text-m {
+    font-size: 1.25rem;
+    font-weight: 500; 
+    line-height: 144.4%; 
+}
+
+.text-l {
+    font-size: 1.38rem;
+    font-weight: 500;  
+}
+
+.text-xl {
+    font-size: 2rem;
+    font-weight: 500;   
+}
+
+.text-xxl {
+    font-size: 3.5rem;
+    font-weight: 500; 
+    line-height: 125%;
+    letter-spacing: -2%; 
+}
+
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: left;
+}
+
+header p {
+    margin: 12px 0 0 11px;
+}
+
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: right;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li a {
+    margin: 12px 55px 0 55px;
+    padding: 2px 8px;
+    display: block;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    background-color: #D9D9D9;
+}
+
+nav ul li a:last-child {
+    margin-right: 8px;
+}
+
+
+/* Main */
+main {
+    padding-top: 66px;
+}
+
+main h1 {
+    padding-bottom: 25px;
+}
+
+main p {
+    padding-bottom: 81.5px;
+}
+
+main picture {
+    align-self: top;
+    justify-self: end;
+    margin-top: 20px;
+}
+
+main .text a:nth-of-type(1) {
+    margin: 0 31.5px 0 0;
+    background-color: #FFA5A5;
+    padding: 8.5px 13px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+main .text a:nth-of-type(1):hover {
+    background-color: #FA6A6A;
+}
+
+main .text a:nth-of-type(2) {
+    padding: 8.5px 13px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+main .text a:nth-of-type(2):hover {
+    background-color: #D9D9D9;
+}
+
+main .grid-xtwo {
+    grid-template-columns: auto auto;
+}
+
+main .phone-helper a {
+    display: none;
+}
+
+
+/* Food Section */
+section {
+    margin-top: 147px;
+    background-color: #FFA5A5;
+}
+
+section h2 {
+    padding-top: 75px;
+}
+
+.food-card {
+    padding-top: 76px;
+}
+
+.food-card:nth-child(even) {
+    align-self: top;
+    justify-self: end;
+}
+
+.food-card:nth-of-type(3) {
+    padding-bottom: 119px;
+}
+
+.price-card {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FA6A6A;
+    width: 567px;
+    height: 81px;
+    border-radius: 0 0 25px 25px;
+}
+
+.price-card p:nth-of-type(1) {
+    padding: 18px 105px 17px 29px;
+}
+
+.price-card p:nth-of-type(2) {
+    padding: 18px 29px 17px 0;
+}
+
+
+/* Footer */
+footer {
+    background-color: #D9D9D9;
+}
+
+footer h3 {
+    padding-top: 75px;
+}
+
+footer .grid-xtwo {
+    padding-top: 76px;
+}
+
+footer .map picture {
+    padding-top: 31px;
+    padding-bottom: 41px;
+}
+
+footer p {
+    padding-top: 20px;
+}
+
+footer .contact .socials {
+    display: grid;
+    padding-top: 47px;
+    grid-template-columns: 47px 35px 37px;
+    column-gap: 25px;
+}
+
+footer .copyright {
+    padding-top: 49px;
+}
+
+/* Tablet */
+@media screen and (max-width: 1250px) {
+   .container {
+    max-width: 904px;
+   }
+
+   /* Fonts */
+   .text-xl {
+    font-size: 1.44rem;
+   }
+
+   /* Main */
+   main picture {
+    margin-top: 30px;
+   }
+
+   /* Food Section */
+   section {
+    margin-top: 113px;
+   }
+
+   section h2 {
+    padding-top: 64px;
+   }
+
+   .food-card {
+    padding-top: 52px;
+   }
+
+   .food-card:nth-of-type(3) {
+    padding-bottom: 90px;
+   }
+
+   .price-card {
+    width: 413px;
+    height: 59px;
+   }
+
+   .price-card p:nth-of-type(1) {
+    padding: 13px 75px 12px 21px;
+   }
+
+   .price-card p:nth-of-type(2) {
+    padding: 13px 21px 12px 0px;
+   }
+
+   /* Footer */
+   footer h3 {
+    padding-top: 64px;
+   }
+
+   footer h4 {
+    padding-top: 48px;
+   }
+
+   footer .map picture {
+    padding-top: 31px;
+    padding-bottom: 73px;
+   }
+}
+
+/* Phone */
+@media screen and (max-width: 965px) {
+    .container {
+        max-width: 410px;
+    }
+
+    /* Fonts */
+    .text-s {
+        font-size: 0.88rem;
+    }
+
+    .text-m {
+        font-size: 1.13rem;
+    }
+
+    main .text-l {
+        font-size: 1.13rem;
+    }
+
+    section .text-xl {
+        font-size: 1.23rem;
+    }
+
+    footer .text-xl {
+        font-size: 1.63rem;
+    }
+
+    .text-xxl {
+        font-size: 2.56rem;
+    }
+
+    /* Navbar */
+    nav {
+        display: none;
+    }
+
+    /* Main */
+    main {
+        padding-top: 28px;
+    }
+
+    main h1 {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    main p {
+        text-align: center;
+        padding-bottom: 0;
+    }
+
+    main picture {
+        margin-top: 33px;
+        padding: 0 102px 21px 79px;
+    }
+
+    main .grid-xtwo {
+        grid-template-columns: auto;
+    }
+
+    main .text a:nth-of-type(1) {
+        display: none;
+        
+    }
+
+    main .text a:nth-of-type(2) {
+        display: none;
+    }
+
+    main .phone-helper a:nth-of-type(1) {
+        text-align: center;
+        display: block;
+        background-color: #FFA5A5;
+        padding: 6.5px;
+        margin: 0 110px 10px 110px; 
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+
+    main .phone-helper a:nth-of-type(1):hover {
+        background-color: #FA6A6A;
+    }
+
+    main .phone-helper a:nth-of-type(2) {
+        text-align: center;
+        display: block;
+        padding: 6.5px 9px;
+        margin: 0 124px 0 124px; 
+        border-radius: 10px;
+        transition: 0.5s;
+
+    }
+
+    main a:nth-of-type(2):hover {
+        background-color: #D9D9D9;
+    }
+
+    /* Food Section */
+    section {
+        margin-top: 30px;
+    }
+
+    section h2 {
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    section .container .grid-xtwo {
+        grid-template-columns: auto;
+        padding-top: 35px;
+        padding-bottom: 51px;
+
+    }
+
+    .food-card {
+        padding-top: 0px;
+        padding-bottom: 35px;
+       }
+    
+    .food-card:nth-of-type(3) {
+        padding-bottom: 35px;
+    }
+
+    .food-card:nth-child(odd) {
+        align-self: center;
+        justify-self: center;
+    }
+
+    .food-card:nth-child(even) {
+        align-self: center;
+        justify-self: center;
+    }
+
+    .price-card {
+        width: 390px;
+        height: 55px;
+    }
+
+    .food-card:nth-of-type(4) {
+        padding-bottom: 0;
+    }
+    
+    /* Footer */
+    footer h3 {
+        padding-top: 30px;
+        padding-bottom: 0;
+        text-align: center;
+    }
+
+    footer .grid-xtwo {
+        grid-template-columns: auto;
+        padding-top: 0;
+    }
+
+    footer h4 {
+        text-align: center;
+    }
+
+    footer .map {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    footer .map picture {
+        align-self: center;
+        justify-self: center;
+        padding-bottom: 30px;
+    }
+
+    footer p {
+        padding-top: 12px;
+        text-align: center;
+    }
+
+    footer .contact .socials {
+        display: grid;
+        grid-template-columns: 47px 35px 37px;
+        column-gap: 25px;
+        padding-top: 0;
+        margin: 12px 0;
+        align-self: center;
+        justify-self: center;
+    }
+
+    footer .contact .socials-grid {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    footer .copyright {
+        text-align: center;
+        padding-top: 37px;
+        padding-bottom: 46px;
+    }
+}
+
+
+
+
+
